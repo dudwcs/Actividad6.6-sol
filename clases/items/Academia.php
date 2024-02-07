@@ -2,6 +2,7 @@
 namespace clases\items;
 
 
+use clases\people\{Alumno, Profesor};
 
 /**
  * Description of Academia

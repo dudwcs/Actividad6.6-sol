@@ -1,7 +1,8 @@
 <?php
 
 
-
+use clases\items\{Academia, Baile};
+use clases\people\{Profesor, Alumno};
 
 
 //Los require... ya no son necesarios gracias al autoload.php
@@ -70,6 +71,7 @@ echo "<h2>{$profe1->getNome()}->eliminar baile...</h2>";
 $profe1->eliminar(new Baile("AFRO"));
 $profe1->mostrarBailes();
 
+echo json_encode($profe1);
 
 
 

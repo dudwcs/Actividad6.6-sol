@@ -1,6 +1,9 @@
 <?php
 namespace clases\people;
 
+use clases\items\Baile;
+
+
 
 /**
  * Description of Profesor
