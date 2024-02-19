@@ -80,4 +80,12 @@ final class Profesor extends Persoa {
         }
     }
 
+    
+       public function verInformacion(){
+           $cadea = implode (" ", 
+                   [$this->nome,  $this->apelidos, 
+                       "(".$this->mobil.")<br/>"]);
+           echo $cadea;
+       }
+
 }

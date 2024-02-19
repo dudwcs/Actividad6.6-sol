@@ -2,7 +2,7 @@
 namespace clases\items;
 
 
-use clases\people\{Alumno, Profesor};
+ use clases\people\{Alumno, Profesor};
 
 /**
  * Description of Academia
@@ -16,6 +16,7 @@ class Academia {
 
     private $profes = [];
     private $alumnos = [];
+
 
     public function engadirProfe(Profesor $profe): bool {
         $engadido = false;

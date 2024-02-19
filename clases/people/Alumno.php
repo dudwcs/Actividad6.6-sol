@@ -20,6 +20,11 @@ final class Alumno extends Persoa {
             $numClases = 0) {
         parent::__construct($nome, $apelidos, $mobil);
         $this->numClases = $numClases;
+
+        // $nombre_clase = get_called_class();
+        // $metodos = get_class_methods(__CLASS__);
+        // echo "<p>El nombre de la clase es: $nombre_clase</p>";
+        // echo "<pre>". print_r($metodos)."</pre>";
     }
 
     //Otra opción sería no añadir un constructor en esta clase
@@ -51,6 +56,24 @@ final class Alumno extends Persoa {
             $importe = "Debe indicar previamente o número de clases";
         }
         return $importe;
+    }
+
+    
+    public function verInformacion()
+    {
+        if ($this->getEdad() >= self::MAYORIA_EDAD) {
+            $cadea = implode(
+                " ",
+                [
+                    $this->nome,
+                    $this->apelidos
+
+                ]
+            );
+            echo "<p>$cadea</p>";
+        } else {
+            echo "<p>No se pueden mostrar los datos</p>";
+        }
     }
 
 }
